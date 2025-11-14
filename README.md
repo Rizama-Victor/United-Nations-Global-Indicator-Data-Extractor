@@ -65,7 +65,7 @@ The application was organized into four main classes. Each class encapsulated a 
 
 ## Results
 
-The Results of the extraction process can be acessed here.
+The Results of the extraction process can be acessed [**here**](Results.zip).
 
 ---
 ## ⚠️ Disclaimer
