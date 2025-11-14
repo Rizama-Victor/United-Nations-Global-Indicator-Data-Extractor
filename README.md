@@ -26,7 +26,40 @@ The goal of this project was to scrape data from the United Nations Database - G
 
 ---
 
-## 🪜 Step by Step Procedure
+## 🔁 Step-by-Step Procedure (Class responsibilities)
+
+The application was organized into four main classes. Each class encapsulated a specific responsibility in the extraction pipeline:
+
+### 1. Gui  
+- **Purpose:** Handled all user interactions and controls.  
+- **What it did:**  
+  - Built and displayed the tkinter window and widgets.  
+  - Triggered the extraction workflow when the user pressed the extract buttons.  
+  - Displayed success|error dialogs and progress feedback to the user.
+
+### 2.`WebsiteAccess
+- **Purpose:** Managed network access and HTTP communication with the UN data pages.  
+- **What it did:**  
+  - Constructed the target URL(s) for a selected indicator.  
+  - Performed HTTP requests (GET) to download the HTML content of indicator pages.  
+  - Handled basic request validation and retried or reported failures when needed.  
+  - Returned raw HTML for downstream parsing.
+
+### 3. WebsiteScraping  
+- **Purpose:** Parsed downloaded HTML and located the raw indicator tables/sections.  
+- **What it did:**  
+  - Used an HTML parser (BeautifulSoup) to find the element(s) containing indicator data (tables, divs).  
+  - Extracted raw text fragments, table rows, and relevant fields (country, year, value).  
+  - Returned the scraped, but not-yet-cleaned, rows to the extraction layer.
+
+### 4. WebsiteDataExtraction  
+- **Purpose:** Cleaned, structured, and persisted the scraped indicator data.  
+- **What it did:**  
+  - Normalized and cleaned scraped strings (removed extra whitespace, fixed numeric formatting) using regex and parsing rules.  
+  - Converted scraped rows into a `pandas.DataFrame` with proper columns (country, year, value, indicator).  
+  - Performed missing-value handling and basic validation checks.  
+  - Saved final output files (CSV | Excel) into organized folders and returned the output path to the GUI.
+
 
 ---
 
