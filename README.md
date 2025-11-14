@@ -53,7 +53,7 @@ The application was organized into four main classes. Each class encapsulated a 
   - Returned the scraped, but not-yet-cleaned, rows to the extraction layer.
 
 ### 4. WebsiteDataExtraction  
-- **Purpose:** Cleaned, structured, and persisted the scraped indicator data.  
+- **Purpose:** Cleaned, structured, and partitioned the scraped indicator data.  
 - **What it did:**  
   - Normalized and cleaned scraped strings (removed extra whitespace, fixed numeric formatting) using regex and parsing rules.  
   - Converted scraped rows into a `pandas.DataFrame` with proper columns (country, year, value, indicator).  
