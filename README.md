@@ -70,7 +70,7 @@ The Results of the extraction process can be acessed [**here**](Results.zip).
 ---
 ## ⚠️ Disclaimer
 
-This README file is a summary of the project’s implementation. You can access the full program script [**here**](United-Nations-Global-Indicator-Data-Extractor.ipynb). Please note that the script was developed based on the structure and functionality of the [**source website**](https://data.un.org/default.aspx) at the time of creation. If the website changes in the future, the script may require minor updates to remain fully functional.
+This README file is a summary of the project’s implementation. You can access the full program script [**here**](United-Nations-Global-Indicator-Data-Extractor.ipynb). Kindly also note that the script was developed based on the structure and functionality of the [**source website**](https://data.un.org/default.aspx) at the time of creation. If the website changes in the future, the script may require minor updates to remain fully functional.
 
 ---
 
