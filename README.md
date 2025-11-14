@@ -37,7 +37,7 @@ The application was organized into four main classes. Each class encapsulated a 
   - Triggered the extraction workflow when the user pressed the extract buttons.  
   - Displayed success|error dialogs and progress feedback to the user.
 
-### 2.`WebsiteAccess
+### 2.WebsiteAccess
 - **Purpose:** Managed network access and HTTP communication with the UN data pages.  
 - **What it did:**  
   - Constructed the target URL(s) for a selected indicator.  
