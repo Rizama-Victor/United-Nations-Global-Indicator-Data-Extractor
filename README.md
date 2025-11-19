@@ -4,7 +4,7 @@ This repository contains the implementation of my project titled _"United Nation
 ---
 ## 🚀 Project Overview
 
-The goal of this project was to scrape data from the United Nations Database - Global Indicators to gather comprehensive global indicator data for every country in the world, as well as various regions. The project focused on four key indicators:
+The goal of this project was to scrape data from the United Nations (UN) Database - Global Indicators to gather comprehensive global indicator data for every country in the world, as well as various regions. The project focused on four key indicators:
 - Economic Indicators
 - Environmental and Infrastructural Indicators
 - General Information
